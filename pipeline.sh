@@ -1,4 +1,3 @@
 #!/bin/bash
-env=$1
 
-echo "In stage $env"
+echo "In stage $1"
