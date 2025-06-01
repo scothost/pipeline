@@ -1,3 +1,4 @@
 #!/bin/bash
+env=$1
 
-echo "External script example"
+echo "In stage $env"
