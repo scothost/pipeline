@@ -18,3 +18,14 @@ jobs:
       - name: Test
         run: echo "Hello World!"
 
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create a text file
+        run: echo "Hello, World!" > hello.txt
+      - name: Upload the text file
+        uses: actions/upload-artifact@v3
+        with:
+          name: hello-artifact
+          path: hello.txt        
+
